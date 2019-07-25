@@ -1,0 +1,12 @@
+import tkinter as Tkinter
+root = Tkinter.Tk()
+root.image = Tkinter.PhotoImage(file='Frogger.png')
+label = Tkinter.Label(image=root.image, bg='white')
+root.overrideredirect(True)
+root.geometry("+250+250")
+root.lift()
+root.wm_attributes("-topmost", True)
+root.wm_attributes("-disabled", True)
+root.wm_attributes("-transparentcolor", "white")
+label.pack()
+label.mainloop()
